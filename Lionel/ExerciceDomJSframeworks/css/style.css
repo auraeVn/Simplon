@@ -1,0 +1,15 @@
+body{
+    background: linear-gradient(aquamarine, rgb(149, 87, 225)); 
+    background-attachment: fixed;
+}
+.nav-link {
+    height: 50px;
+}
+.contenuIntro {
+    padding: 50px;
+}
+.container{
+    padding-top: 30px;
+    height:100vh;
+    opacity: 0.6;
+}

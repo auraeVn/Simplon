@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    cursor: url('../images/cursor.png'), auto;
+}
+
+body {
+    height: 100vh;
+}
+
+/* MOBILE FIRST */
+
+main {
+    height: 100%;
+    display: grid;
+}
+
+section {
+    border: 4px solid black;
+    font-weight: 800;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(2) {
+    order: 1;
+}
+
+header,
+footer {
+    display: none;
+}
+
+
+/* couleurs des sections */
+
+section:nth-of-type(3) {
+    background-color: #c3a5f5;
+}
+
+section:nth-of-type(4) {
+    background-color: #ffa9af;
+}
+
+section:nth-of-type(5) {
+    background-color: #ffe000;
+}
+
+section:nth-of-type(6) {
+    background-color: #3cc8aa;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-areas:
+            "plant22 socials"
+            "section section"
+            "section section";
+        grid-template-rows: 20% 40%;
+        grid-template-columns: 50%;
+    }
+
+    header {
+        grid-area: "plant22";
+        border: 4px solid black;
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        grid-area: "socials";
+        border: 4px solid black;
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+    }
+
+    section {
+        grid-area: "section";
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section:nth-of-type(1) {
+        display: none;
+    }
+
+    section:nth-of-type(2) {
+        display: none;
+    }
+
+    .link_list {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 18px;
+    }
+
+    /* animation des sections au hover */
+
+    section:hover>a {
+        /* > = enfant direct */
+        transform: scale(1.1);
+        transition-duration: .5s;
+    }
+
+    /* Header lien animation underline */
+
+    header a::after {
+        content: '';
+        background: #c3a5f5;
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: 0.3s;
+    }
+
+    header a:hover:after {
+        width: 100%;
+    }
+
+    /* element 1 footer liste réseaux sociaux animation underline */
+
+    li:first-child a::after {
+        content: '';
+        background: #1db6fd;
+        display: block;
+        width: 0;
+        height: 5px;
+        transition: 0.3s;
+    }
+
+    li:first-child a:hover:after {
+        width: 100%;
+    }
+
+    /* element 2 footer liste réseaux sociaux animation underline */
+
+    li:nth-child(2) a::after {
+        content: '';
+        background: #1746c6;
+        display: block;
+        width: 0;
+        height: 5px;
+        transition: 0.3s;
+    }
+
+    li:nth-child(2) a:hover:after {
+        width: 100%;
+    }
+
+    /* element 3 footer liste réseaux sociaux animation underline */
+
+    li:nth-child(3) a::after {
+        content: '';
+        background: #fb7217;
+        display: block;
+        width: 0;
+        height: 5px;
+        transition: 0.3s;
+    }
+
+    li:nth-child(3) a:hover:after {
+        width: 100%;
+    }
+
+    /* element 4 footer lien 1 spot */
+
+    footer div>a {
+        position: relative;
+    }
+
+    footer div>a::after {
+        content: '';
+        background: #fff018;
+        display: block;
+        width: 0;
+        height: 5px;
+        transition: 0.3s;
+        left: 0;
+    }
+
+    div a:hover:after {
+        width: 100%;
+    }
+
+    /* element 5 footer lien contact us */
+
+}
+
+
+/* HAMBURGER */
+
+button {
+    background-color: transparent;
+    border: 8px solid black;
+}
+
+.button-one .line {
+    transition: 1s;
+    transform-origin: center;
+}
+
+.button-one:hover .top {
+    y: 45px;
+    rotate: 45deg;
+}
+
+.button-one:hover .bottom {
+    y: 45px;
+    rotate: -45deg;
+}
+
+.button-one:hover .middle {
+    opacity: 0;
+}
