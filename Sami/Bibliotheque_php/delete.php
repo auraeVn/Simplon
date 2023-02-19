@@ -28,5 +28,3 @@
     mysqli_close($connex);
     ?>
 
-</body>
-</html>

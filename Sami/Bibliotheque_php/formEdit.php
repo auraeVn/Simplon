@@ -11,12 +11,10 @@
 
 <body>
 <div class="container">
-    <h1>Modification de livre</h1>
-    <h6>Modifier ici les informations nécessaires et cliquer sur ajouter</h6>
+<h1><a href="index.php">Bibliothèque du Cloître</a></h1>
+    <h5>Modifier ici les informations nécessaires et cliquer sur ajouter</h5>
 
 <?php
-
-// Include affiche le Header et le Footer
 include "header.php";
 ?>
 
@@ -94,7 +92,10 @@ include "header.php";
 </label>
 
 </form>
-    
+<?php
+        include "footer.php";
+        ?>
 </div>
+
 </body>
 </html>
