@@ -16,9 +16,7 @@ body {
 	flex-direction: column;
 }
 
-.login {
-	color: greenyellow;
-}
+ /* TITRES */
 
 .titresAcceuil p:first-child{
 	
@@ -76,11 +74,12 @@ header {
 	border-radius: 20px;
 	width: 60px;
 	height: 60px;
+	transition: 0.5s ease-in-out;
 }
 
 .imglogo:hover {
-	animation: bigger 1s;
-	animation-fill-mode: forwards;
+	transform: scale(1.1);
+	
 }
 
 .btn-secondary:hover {
@@ -91,16 +90,6 @@ header {
 	color: rgb(92, 91, 91);
 }
 
-
-@keyframes bigger {
-	from {
-		transform: scale(1);
-	}
-
-	to {
-		transform: scale(1.2);
-	}
-}
 
 /* MENU HAMBURGER */
 
@@ -329,7 +318,6 @@ thead {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		
 		align-items: center;
 		transition: transform ease-out 0.5s;
 		gap: 1em;
@@ -338,6 +326,10 @@ thead {
 	#nav_ul {
 		gap: 2em;
 		text-align: center;
+	}
+
+	#nav_ul li:nth-child(2) {
+		z-index: 4;
 	}
 
 	#nav_ul li:nth-child(3) {

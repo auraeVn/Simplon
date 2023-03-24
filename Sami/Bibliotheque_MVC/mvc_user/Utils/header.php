@@ -1,11 +1,11 @@
 <header>
-	<nav class="navBar-container">
-		<div class="container-fluid" id="navBarDiv">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navContainer">
+	
 
 			<a class="navbar-brand" href="?controller=home&action=home"><img class="imglogo" src="Content/logo.png" alt=""></a>
 
 			<div class="collapse navbar-collapse" id="menu">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav" id="nav_ul">
 
 					<!-- <li class="nav-item">
 						<button type="button" class="btn btn-outline-light btnNav"><a class="nav-link" id="navbarDropdownMenuLink" href="?controller=user&action=deconnexion">Déconnexion</a></button>
@@ -55,6 +55,6 @@
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
-		</div>
+	
 	</nav>
 </header>

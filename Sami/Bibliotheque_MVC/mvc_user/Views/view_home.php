@@ -1,12 +1,9 @@
-<div class="container bord">
-	<div class="row">
-	 <?php echo '<p class="login">' . "Bonjour " . $_SESSION['prenom'] . '</p>' ;?>
-	</div>
-	<section>
-	<div>
+<div class="container bord" id="shadow_container">
+<section>
+	<div class="titresAcceuil">
 		<p>Bibliothèque du Cloître</p>
-		<p>Des idées, des références, des outils</p>
+		<p>Get ready for a development environment that can finally catch up with you.</p>
 	</div>
-	</section>
+</section>
 	
 </div>
